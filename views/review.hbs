@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Reviews</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../public/css/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="post">
+            <div class="text">
+                Thanks for rating us!</div>
+            <div class="edit">
+                EDIT</div>
+        </div>
+        {{!-- <div class="star-widget">
+            <input type="radio" name="rate" id="rate-5">
+            <label for="rate-5" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-4">
+            <label for="rate-4" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-3">
+            <label for="rate-3" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-2">
+            <label for="rate-2" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-1">
+            <label for="rate-1" class="fas fa-star"></label>
+            <div class="form"> --}}
+                <form action="/process-contact-form" method="post">
+                <div class="row">
+                  <div class="form-group col-lg-6">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  </div>
+                  <div class="form-group col-lg-6 mt-3 mt-lg-0">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="describe_your_experience" id="subject" placeholder="describe_your_experience" required>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="number" name="rating" id="5" placeholder="rating" required></textarea>
+                </div>
+                <br>
+                <div class="text-center"><button type="submit" class="btn btn-primary" title="Send Message">Send
+                    Message</button></div>
+              </form>
+              </form>
+  <a  href="/viewreview" >VIEW EXPERIENCE</a>
+</div>
+            </div>
+            {{!-- <form action="#">
+                <header></header>
+                <div class="textarea">
+                    <textarea cols="30" placeholder="Describe your experience.."></textarea>
+
+
+                </div>
+                <div class="btn">
+                    <button type="submit">Post</button>
+                </div>
+                <script>
+                    const btn = document.querySelector("button");
+                    const post = document.querySelector(".post");
+                    const widget = document.querySelector(".star-widget");
+                    const editBtn = document.querySelector(".edit");
+                    btn.onclick = () => {
+                        widget.style.display = "none";
+                        post.style.display = "block";
+                        editBtn.onclick = () => {
+                            widget.style.display = "block";
+                            post.style.display = "none";
+                        }
+                        return false;
+                    }
+                </script> --}}
+</body>
+
+</html>
